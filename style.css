@@ -325,3 +325,85 @@ ul {
 .fourth-list li:hover:after {
     width: 100%;
 }
+
+
+/*------------------------FIFTH LIST---------------------- */
+
+.fifth-list li {
+    background-color: white;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: .4em .7em;
+    z-index: 1;
+    position: relative;
+    transition: background .4s, color .2s;
+}
+
+.fifth-list li:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 45%;
+    z-index: -1;
+    transform: translate(.2em, -.2em);
+    transition: transform .3s, background .4s;
+}
+
+.fifth-list li:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 24.41px;
+    height: 5px;
+    z-index: -1;
+    transform: translate(.2em, -.2em);
+    transition: transform .3s, background .4s;
+}
+
+.fifth-list li .span1-5 {
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 45%;
+    z-index: -1;
+    transform: translate(-.2em, .2em);
+    transition: transform .3s, background .4s;
+}
+
+.fifth-list li .span2-5 {
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 24.41px;
+    height: 5px;
+    z-index: -1;
+    transform: translate(-.2em, .2em);
+    transition: transform .3s, background .4s;
+}
+
+.fifth-list li:hover:before,
+.fifth-list li:hover:after {
+    background-color: rgb(227, 74, 100);
+    transform: translate(-.6em, .5em);
+}
+
+.fifth-list li:hover .span1-5,
+.fifth-list li:hover .span2-5 {
+    background-color: rgb(227, 74, 100);
+    transform: translate(.6em, -.5em);
+}
+
+.fifth-list li:hover {
+    background-color: rgb(227, 74, 100);
+    color: white;
+}
